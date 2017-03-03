@@ -105,11 +105,11 @@ nav.main-menu a {
 } 
 
 nav.main-menu li:hover {
-	transform: scale(1.07, 1);
+	/*transform: scale(1.07, 1);
 	-webkit-transform: scale(1.07, 1);
 	-moz-transform: scale(1.07, 1);
 	-o-transform: scale(1.07, 1);
-	-ms-transform: scale(1.07, 1);
+	-ms-transform: scale(1.07, 1);*/
 	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.9);
@@ -148,13 +148,30 @@ nav.main-menu li {
 	background-color:#884DC0;
 }
 
-nav.main-menu li.active {
-	transform: scale(1.07, 1);
-	-webkit-transform: scale(1.07, 1);
-	-moz-transform: scale(1.07, 1);
-	-o-transform: scale(1.07, 1);
-	-ms-transform: scale(1.07, 1);
-	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
-	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
-	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.9);
+span.active:after {
+	content:'';
+	position:absolute;
+	border-style: solid;
+	border-width: 15px 20px 0 20px;
+	border-color: #007bff transparent transparent transparent;
+
+}
+
+span.active:before {
+	content:'';
+	position:absolute;
+	left:30px;
+	border-style: solid;
+	border-width: 0 10px 7px 10px;
+	border-color: transparent transparent #003da6 transparent;
+
+}
+
+span.active {
+	margin-left:65px;
+	position:absolute;
+	top:-7px;
+	border-style: solid;
+	border-width: 0 10px 7px 10px;
+	border-color: transparent transparent #003da6 transparent;
 }
