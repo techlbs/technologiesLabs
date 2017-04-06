@@ -103,7 +103,7 @@ nav.main-menu a {
 	background-color:rgba(255,255,255,0.2);	
 } 
 
-nav.main-menu li:hover {
+nav.main-menu li:not(.active):hover {
 	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
 	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
 	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.9);
