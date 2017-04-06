@@ -1,0 +1,25 @@
+div.clearfix {
+  clear: both; }
+
+div.slider-container {
+  background: #000;
+  width: 1280px;
+  margin: 0 auto; }
+  div.slider-container div.slider {
+    border: 1px solid red;
+    width: 1190px;
+    margin: 0 auto;
+    overflow: hidden; }
+    div.slider-container div.slider ul {
+      margin: 0;
+      margin-left: -1220px;
+      width: 9999px;
+      list-style: none;
+      padding: 0; }
+      div.slider-container div.slider ul li {
+        float: left;
+        margin: 50px 26px 50px 0; }
+        div.slider-container div.slider ul li img {
+          display: block; }
+      div.slider-container div.slider ul li:last-child {
+        margin-right: 0; }
