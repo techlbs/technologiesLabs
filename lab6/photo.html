@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Фото</title>
+	<meta charset="utf8" />
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/print.css">
+	<link rel="stylesheet" href="css/yeremenko-slider.css">
+</head>
+<body>
+	<header>
+		<h1>Личная страница (блог) Еременко Артем Александрович</h1>
+		<nav class="main-menu">
+			<ul>
+				<li class="background-red"><a href="index.html">Главная</a></li>
+				<li class="background-orange"><a href="rozklad.html">Мое расписание</a></li>
+				<li class="background-yellow active"><span class="active"></span><a href="photo.html">Фотоальбом</a></li>
+				<li class="background-green"><a href="news.html">Последние новости</a></li>
+				<li class="background-blue"><a href="video.html">Видеоролики</a></li>
+				<li class="background-purple"><a href="https://github.com/techlbs/technologiesLabs/tree/master/lab6" target="_blank">Git Repository</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="slider-container">
+		<div class="slider">
+			<img id="arrow-left" onclick="leftToRight()" src="img/arrow-left.png" alt="">
+			<ul id="slider">
+				<li><img src="img/gallery/thumbnails/img1.jpg" alt="" width="380" height="300" target="_blank"></li>
+				<li><img src="img/gallery/thumbnails/img2.jpg" alt="" width="380" height="300" target="_blank"></li>
+				<li><img src="img/gallery/thumbnails/img3.jpg" alt="" width="380" height="300" target="_blank"></li>
+				<li><img src="img/gallery/thumbnails/img4.jpg" alt="" width="380" height="300" target="_blank"></li>
+				<li><img src="img/gallery/thumbnails/img5.jpg" alt="" width="380" height="300" target="_blank"></li>
+				<li><img src="img/gallery/thumbnails/img6.jpg" alt="" width="380" height="300" target="_blank"></li>
+				<li><img src="img/gallery/thumbnails/img7.jpg" alt="" width="380" height="300" target="_blank"></li>
+				<li><img src="img/gallery/thumbnails/img8.jpg" alt="" width="380" height="300" target="_blank"></li>
+			</ul>
+			<img id="arrow-right" src="img/arrow-right.png" onclick="rightToLeft()" alt="">
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+	<a href="#" class="scroll-up"><img src="img/up_button.png" alt="ВВЕРХ" title="Перейти вверх страницы" width="50px"></a>
+	
+	<footer class="centered">
+		<p>&copy; 2017 Все права защищены! <a href="https://vk.com/artyom_yeremenko" target="_blank">Напишите мне</a></p>
+	</footer>
+
+	<script src="js/yeremenko-slider.js"></script>
+</body>
+</html>
