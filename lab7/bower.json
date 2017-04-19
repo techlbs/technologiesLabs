@@ -1,0 +1,17 @@
+{
+  "name": "lab7",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Artyom Yeremenko"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/techlbs/technologiesLabs",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
