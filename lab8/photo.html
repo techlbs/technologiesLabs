@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Фото</title>
+    <meta charset="utf8"/>
+    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css
+         " rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/print.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+</head>
+<body>
+<header>
+    <h1>Личная страница (блог) Еременко Артем Александрович</h1>
+    <nav class="main-menu">
+        <ul>
+            <li class="background-red"><a href="index.html">Главная</a></li>
+            <li class="background-orange"><a href="rozklad.html">Мое расписание</a></li>
+            <li class="background-yellow active"><span class="active"></span><a href="photo.html">Фотоальбом</a></li>
+            <li class="background-green"><a href="news.html">Последние новости</a></li>
+            <li class="background-blue"><a href="video.html">Видеоролики</a></li>
+            <li class="background-purple"><a href="https://github.com/techlbs/technologiesLabs/tree/master/lab8"
+                                             target="_blank">Git Repository</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="slider1" class="slider">
+    <div><img src="img/gallery/thumbnails/img1.jpg" alt=""></div>
+    <div><img src="img/gallery/thumbnails/img2.jpg" alt=""></div>
+    <div><img src="img/gallery/thumbnails/img3.jpg" alt=""></div>
+    <div><img src="img/gallery/thumbnails/img4.jpg" alt=""></div>
+    <div><img src="img/gallery/thumbnails/img5.jpg" alt=""></div>
+    <div><img src="img/gallery/thumbnails/img6.jpg" alt=""></div>
+    <div><img src="img/gallery/thumbnails/img7.jpg" alt=""></div>
+    <div><img src="img/gallery/thumbnails/img8.jpg" alt=""></div>
+    <div><img src="img/gallery/thumbnails/img5.jpg" alt=""></div>
+</div>
+
+<div class="container">
+    <div id="tabs">
+        <ul>
+            <li><a href="#fragment-1">LightBox</a></li>
+            <li><a href="#fragment-2">ColorBox</a></li>
+        </ul>
+        <div id="fragment-1">
+            <a href="img/gallery/img1.jpg" data-lightbox="box1">
+                <img src="img/gallery/img1.jpg" alt="" width="150" height="150">
+            </a>
+            <a href="img/gallery/img2.jpg" data-lightbox="box1">
+                <img src="img/gallery/img2.jpg" alt="" width="150" height="150">
+            </a>
+            <a href="img/gallery/img3.jpg" data-lightbox="box1">
+                <img src="img/gallery/img3.jpg" alt="" width="150" height="150">
+            </a>
+            <a href="img/gallery/img4.jpg" data-lightbox="box1">
+                <img src="img/gallery/img4.jpg" alt="" width="150" height="150">
+            </a>
+            <a href="img/gallery/img5.jpg" data-lightbox="box1">
+                <img src="img/gallery/img5.jpg" alt="" width="150" height="150">
+            </a>
+            <a href="img/gallery/img6.jpg" data-lightbox="box1">
+                <img src="img/gallery/img6.jpg" alt="" width="150" height="150">
+            </a>
+            <a href="img/gallery/img7.jpg" data-lightbox="box1">
+                <img src="img/gallery/img7.jpg" alt="" width="150" height="150">
+            </a>
+            <a href="img/gallery/img8.jpg" data-lightbox="box1">
+                <img src="img/gallery/img8.jpg" alt="" width="150" height="150">
+            </a>
+        </div>
+        <div id="fragment-2">
+            <a href="img/gallery/img1.jpg" class="cb1">
+                <img src="img/gallery/img1.jpg" alt="" width="150" height="150">
+            </a>
+            <a href="img/gallery/img2.jpg" class="cb1">
+                <img src="img/gallery/img2.jpg" alt="" width="150" height="150">
+            </a>
+            <a href="img/gallery/img3.jpg" class="cb1">
+                <img src="img/gallery/img3.jpg" alt="" width="150" height="150">
+            </a>
+            <a href="img/gallery/img4.jpg" class="cb1">
+                <img src="img/gallery/img4.jpg" alt="" width="150" height="150">
+            </a>
+            <a href="img/gallery/img5.jpg" class="cb1">
+                <img src="img/gallery/img5.jpg" alt="" width="150" height="150">
+            </a>
+            <a href="img/gallery/img6.jpg" class="cb1">
+                <img src="img/gallery/img6.jpg" alt="" width="150" height="150">
+            </a>
+            <a href="img/gallery/img7.jpg" class="cb1">
+                <img src="img/gallery/img7.jpg" alt="" width="150" height="150">
+            </a>
+            <a href="img/gallery/img8.jpg" class="cb1">
+                <img src="img/gallery/img8.jpg" alt="" width="150" height="150">
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<a href="#" class="scroll-up"><img src="img/up_button.png" alt="ВВЕРХ" title="Перейти вверх страницы" width="50px"></a>
+
+<footer class="centered">
+    <p>&copy; 2017 Все права защищены! <a href="https://vk.com/artyom_yeremenko" target="_blank">Напишите мне</a></p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+<script src="js/yeremenko-slider.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/jquery.colorbox-min.js"></script>
+</body>
+</html>

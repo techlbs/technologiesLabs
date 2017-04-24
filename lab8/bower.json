@@ -1,0 +1,17 @@
+{
+  "name": "lab8",
+  "homepage": "https://github.com/techlbs/technologiesLabs",
+  "authors": [
+    "Artyom Yeremenko <eremenko_aa@groupbwt.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
