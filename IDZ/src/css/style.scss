@@ -1,0 +1,166 @@
+//colors
+$color_manz_approx: rgb(219,249,112);
+$white_100: rgba(255,255,255,1);
+$white: #ffffff;
+$black: #000;
+$white_20: rgba(255,255,255,0.2);
+$black_90: rgba(0,0,0,0.9);
+$black_100: rgba(0,0,0,1);
+$color_limeade_approx: #7b9e00;
+$color_citron_approx: #98b72e;
+$color_lime_approx: #bdf400;
+$color_red_approx: #f50d08;
+$color_blaze_orange_approx: #f85e02;
+$color_corn_approx: #f3c306;
+$color_chartreuse_approx: #73dc02;
+$color_cerulean_approx: #049ad5;
+$color_fuchsia_blue_approx: #884dc0;
+$color_matisse_approx: #1b6e92;
+
+//fonts
+$font_0: Arial;
+
+
+@media screen and(min-width: 850px) {
+	body {
+		font-family: $font_0;
+		background: $color_manz_approx;
+		background: linear-gradient(to bottom, $color_manz_approx 0,$white_100 100%);
+		filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_manz_approx', endcolorstr='$white',gradienttype=0 );
+		min-width: 850px;
+	}
+}
+body {
+	min-height: 100%;
+}
+html {
+	min-height: 100%;
+}
+.scroll-up {
+	position: fixed;
+	top: 90%;
+	opacity: 0.3;
+	&:hover {
+		opacity: 1;
+	}
+}
+.full {
+	padding-top: 28%;
+}
+section {
+	padding: 20px 50px;
+}
+h1 {
+	text-align: center;
+	color: $color_limeade_approx;
+}
+h2 {
+	text-align: center;
+	color: $color_citron_approx;
+}
+h3 {
+	text-align: center;
+	color: $color_citron_approx;
+}
+p {
+	font-style: italic;
+	&:first-letter {
+		color: $color_lime_approx;
+		font-weight: bold;
+	}
+}
+figcaption {
+	font-weight: bold;
+	color: $color_limeade_approx;
+}
+a {
+	font-weight: bold;
+	color: $color_citron_approx;
+	&:hover {
+		color: $color_limeade_approx;
+	}
+}
+.centered {
+	text-align: center;
+}
+@media screen and(min-width:1024px) {
+	nav {
+		display: block;
+		width: 100%;
+		position: relative;
+		&.main-menu {
+			ul {
+				list-style: none;
+				margin: 0 auto;
+				width: 1140px;
+				padding-left: 0;
+				overflow: hidden;
+			}
+			a {
+				text-decoration: none;
+				text-align: center;
+				display: block;
+				padding: 15px;
+				color: $white;
+				//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				text-shadow: 0 0 3px $black;
+			}
+			li {
+				float: left;
+				width: 190px;
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: inset 3px 0 10px -5px $black_100;
+				&:not(.active) {
+					&:hover {
+						//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+						box-shadow: 0 0 10px 1px $black_90;
+					}
+					a:hover {
+						background-color: $white_20;
+					}
+				}
+			}
+		}
+	}
+}
+.background-red {
+	background-color: $color_red_approx;
+}
+.background-orange {
+	background-color: $color_blaze_orange_approx;
+}
+.background-yellow {
+	background-color: $color_corn_approx;
+}
+.background-green {
+	background-color: $color_chartreuse_approx;
+}
+.background-blue {
+	background-color: $color_cerulean_approx;
+}
+.background-purple {
+	background-color: $color_fuchsia_blue_approx;
+}
+span.active {
+	margin-left: 65px;
+	position: absolute;
+	top: -5px;
+	border-style: solid;
+	border-width: 0 7px 5px 5px;
+	border-color: transparent transparent $color_matisse_approx transparent;
+	&:after {
+		content: '';
+		position: absolute;
+		border-style: solid;
+		border-width: 15px 20px 0 20px;
+		border-color: $color_cerulean_approx transparent transparent transparent;
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		left: 33px;
+		border-style: solid;
+		border-width: 0 5px 5px 7px;
+		border-color: transparent transparent $color_matisse_approx transparent;
+	}
+}

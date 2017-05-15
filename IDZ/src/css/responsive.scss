@@ -1,0 +1,44 @@
+//colors
+$color_manz_approx: rgb(219,249,112);
+$white_100: rgba(255,255,255,1);
+$white: #ffffff;
+$black: #000;
+
+//fonts
+$font_0: Arial;
+
+@media screen and(max-width: 850px) {
+	body {
+		font-family: $font_0;
+		background: $color_manz_approx;
+		background: linear-gradient(to bottom, $color_manz_approx 0,$white_100 100%);
+		filter: progid:dximagetransform.microsoft.gradient(startcolorstr='$color_manz_approx', endcolorstr='$white',gradienttype=0 );
+		width: 90%;
+	}
+	figure {
+		margin: 0;
+		padding: 0;
+	}
+}
+@media only screen and(max-width: 1024px) {
+	nav.main-menu {
+		ul {
+			list-style: none;
+			margin: 0 auto;
+		}
+		a {
+			text-decoration: none;
+			color: $white;
+			//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+			text-shadow: 0 0 3px $black;
+		}
+		li {
+			padding: 15px;
+			width: 190px;
+			text-align: center;
+		}
+	}
+	span.active {
+		display: none;
+	}
+}

@@ -1,0 +1,106 @@
+﻿extends layouts/_bootstrap
+block title
+    title Фото
+block styles
+    // build:css(.) styles/vendor.css
+    // bower:css
+    // endbower
+    // endbuild
+    link(href='https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css', rel='stylesheet')
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css')
+    link(rel='stylesheet', href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css')
+    // build:css css/style.css
+    // build:css css/slider.css
+    // inject:css
+    // endinject
+    // endbuild
+block body
+    header
+        h1 Личная страница (блог) Еременко Артем Александрович
+        nav.main-menu
+            ul
+                li.background-red
+                    a(href='index.html') Главная
+                li.background-orange
+                    a(href='rozklad.html') Мое расписание
+                li.background-yellow.active
+                    span.active
+                    a(href='photo.html') Фотоальбом
+                li.background-green
+                    a(href='news.html') Последние новости
+                li.background-blue
+                    a(href='video.html') Видеоролики
+                li.background-purple
+                    a(href='https://github.com/techlbs/technologiesLabs/tree/master/IDZ', target='_blank') Git Repository
+    #slider1.slider
+        div
+            img(src='img/gallery/thumbnails/img1.jpg', alt='')
+        div
+            img(src='img/gallery/thumbnails/img2.jpg', alt='')
+        div
+            img(src='img/gallery/thumbnails/img3.jpg', alt='')
+        div
+            img(src='img/gallery/thumbnails/img4.jpg', alt='')
+        div
+            img(src='img/gallery/thumbnails/img5.jpg', alt='')
+        div
+            img(src='img/gallery/thumbnails/img6.jpg', alt='')
+        div
+            img(src='img/gallery/thumbnails/img7.jpg', alt='')
+        div
+            img(src='img/gallery/thumbnails/img8.jpg', alt='')
+        div
+            img(src='img/gallery/thumbnails/img5.jpg', alt='')
+    .container
+        #tabs
+            ul
+                li
+                    a(href='#fragment-1') LightBox
+                li
+                    a(href='#fragment-2') ColorBox
+            #fragment-1
+                a(href='img/gallery/img1.jpg', data-lightbox='box1')
+                    img(src='img/gallery/img1.jpg', alt='', width='150', height='150')
+                a(href='img/gallery/img2.jpg', data-lightbox='box1')
+                    img(src='img/gallery/img2.jpg', alt='', width='150', height='150')
+                a(href='img/gallery/img3.jpg', data-lightbox='box1')
+                    img(src='img/gallery/img3.jpg', alt='', width='150', height='150')
+                a(href='img/gallery/img4.jpg', data-lightbox='box1')
+                    img(src='img/gallery/img4.jpg', alt='', width='150', height='150')
+                a(href='img/gallery/img5.jpg', data-lightbox='box1')
+                    img(src='img/gallery/img5.jpg', alt='', width='150', height='150')
+                a(href='img/gallery/img6.jpg', data-lightbox='box1')
+                    img(src='img/gallery/img6.jpg', alt='', width='150', height='150')
+                a(href='img/gallery/img7.jpg', data-lightbox='box1')
+                    img(src='img/gallery/img7.jpg', alt='', width='150', height='150')
+            #fragment-2
+                a.cb1(href='img/gallery/img1.jpg')
+                    img(src='img/gallery/img1.jpg', alt='', width='150', height='150')
+                a.cb1(href='img/gallery/img2.jpg')
+                    img(src='img/gallery/img2.jpg', alt='', width='150', height='150')
+                a.cb1(href='img/gallery/img3.jpg')
+                    img(src='img/gallery/img3.jpg', alt='', width='150', height='150')
+                a.cb1(href='img/gallery/img4.jpg')
+                    img(src='img/gallery/img4.jpg', alt='', width='150', height='150')
+                a.cb1(href='img/gallery/img5.jpg')
+                    img(src='img/gallery/img5.jpg', alt='', width='150', height='150')
+                a.cb1(href='img/gallery/img6.jpg')
+                    img(src='img/gallery/img6.jpg', alt='', width='150', height='150')
+                a.cb1(href='img/gallery/img7.jpg')
+                    img(src='img/gallery/img7.jpg', alt='', width='150', height='150')
+    a.scroll-up(href='#')
+        img(src='img/up_button.png', alt='ВВЕРХ', title='Перейти вверх страницы', width='50px')
+    footer.centered
+        p
+            | © 2017 Все права защищены!
+            a(href='https://vk.com/artyom_yeremenko', target='_blank') Напишите мне
+block scripts
+    // build:js(.) scripts/vendor.js
+    // bower:js
+    // endbower
+    // endbuild
+    script(src='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js')
+    // build:js(src) scripts/yeremenko-slider.js
+    // inject:js
+    // endinject
+    // endbuild

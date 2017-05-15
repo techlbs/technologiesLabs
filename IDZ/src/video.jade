@@ -1,0 +1,41 @@
+﻿extends layouts/_bootstrap
+block title
+    title Видео
+block styles
+    // build:css(.) styles/vendor.css
+    // bower:css
+    // endbower
+    // endbuild
+    // build:css css/style.css
+    // build:css css/slider.css
+    // inject:css
+    // endinject
+    // endbuild
+block body
+    header
+        h1 Личная страница (блог) Еременко Артем Александрович
+        nav.main-menu
+            ul
+                li.background-red
+                    a(href='index.html') Главная
+                li.background-orange
+                    a(href='rozklad.html') Мое расписание
+                li.background-yellow
+                    a(href='photo.html') Фотоальбом
+                li.background-green
+                    a(href='news.html') Последние новости
+                li.background-blue.active
+                    span.active
+                    a(href='video.html') Видеоролики
+                li.background-purple
+                    a(href='https://github.com/techlbs/technologiesLabs/tree/master/IDZ', target='_blank') Git Repository
+    section
+        header
+            h3 Видеоролики
+        article.full
+    a.scroll-up(href='#')
+        img(src='img/up_button.png', alt='ВВЕРХ', title='Перейти вверх страницы', width='50px')
+    footer.centered
+        p
+            | © 2017 Все права защищены!
+            a(href='https://vk.com/artyom_yeremenko', target='_blank') Напишите мне

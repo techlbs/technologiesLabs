@@ -1,0 +1,11 @@
+@media print {
+
+	span.active, .scroll-up, nav, nav ul, footer p, img, figure, figcaption {
+		display:none;
+		font-family: Georgia;
+	}
+
+	body {
+		margin:50px;
+	}
+}

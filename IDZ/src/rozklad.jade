@@ -1,0 +1,115 @@
+﻿extends layouts/_bootstrap
+block title
+    title Расписание
+block styles
+    // build:css(.) styles/vendor.css
+    // bower:css
+    // endbower
+    // endbuild
+    // build:css css/style.css
+    // build:css css/slider.css
+    // inject:css
+    // endinject
+    // endbuild
+block body
+    header
+        h1 Личная страница (блог) Еременко Артем Александрович
+        nav.main-menu
+            ul
+                li.background-red
+                    a(href='index.html') Главная
+                li.background-orange.active
+                    span.active
+                    a(href='rozklad.html') Мое расписание
+                li.background-yellow
+                    a(href='photo.html') Фотоальбом
+                li.background-green
+                    a(href='news.html') Последние новости
+                li.background-blue
+                    a(href='video.html') Видеоролики
+                li.background-purple
+                    a(href='https://github.com/techlbs/technologiesLabs/tree/master/IDZ', target='_blank') Git Repository
+    section
+        article
+            header
+                h3 Мое расписание
+            table(border='1', cellspacing='0')
+                thead
+                    tr
+                        th Время
+                        th ПН
+                        th ВТ
+                        th СР
+                        th ЧТ
+                        th ПТ
+                tbody.centered
+                    tr
+                        td
+                            | 11
+                            sup 25
+                            |  - 12
+                            sup 45
+                        td -
+                        td -
+                        td -
+                        td -
+                        td Технологии и протоколы Интернет
+                    tr
+                        td(rowspan='2')
+                            | 14
+                            sup 30
+                            |  - 15
+                            sup 50
+                        td(rowspan='2') Английский
+                        td(rowspan='2') Основы автоматизированного проектирования
+                        td Психология
+                        td(rowspan='2') Архитектура и проектирование ПО
+                        td Психология
+                    tr
+                        td Технологии и протоколы Интернет
+                        td Основы программной инженерии
+                    tr
+                        td(rowspan='2')
+                            | 14
+                            sup 30
+                            |  - 15
+                            sup 50
+                        td(rowspan='2') Практикум по программированию
+                        td Анализ требований к ПО
+                        td Технологии и протоколы Интернет
+                        td(rowspan='2') Основы автоматизированного проектирования
+                        td(rowspan='2') -
+                    tr
+                        td Архитектура и проектирование ПО
+                        td Эмпирические методы
+                    tr
+                        td
+                            | 16
+                            sup 05
+                            |  - 17
+                            sup 25
+                        td Эмпирические методы
+                        td Анализ требований к ПО
+                        td Основы программной инженерии
+                        td -
+                        td -
+        article
+            header
+                h3 Список преподавателей
+            ul
+                li Вавилина С. Г.
+                li Мухин В. В.
+                li Кривохата А. Г.
+                li Борисовская Ю. А.
+                li Мыльцев А. М.
+                li Клопота Е. А.
+                li Лисняк А. А.
+                li Кудин А. В.
+                li Горбенко В. И.
+                li Чопоров С. В.
+    a.scroll-up(href='#')
+        img(src='img/up_button.png', alt='ВВЕРХ', title='Перейти вверх страницы', width='50px')
+    footer.centered
+        p
+            | © 2017 Все права защищены!
+            a(href='https://vk.com/artyom_yeremenko', target='_blank') Напишите мне
